@@ -34,7 +34,7 @@ int ifunk(int val, int size) {
 int cfunk(char* str, int size) {
   int val = 0;
   for (int i = 0; i < strlen(str); i++)
-    val += (int)str[i];
+    val += static_cast<int>(str[i]);
   return(val%size);
 }
 

@@ -11,7 +11,7 @@ class TabRecord {
   int data;
  public:
   TabRecord(KeyType, int);
-  ~TabRecord(){}
+  ~TabRecord() {}
   int Getdata()const;
   KeyType Getkey()const;
 };
