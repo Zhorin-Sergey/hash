@@ -11,7 +11,7 @@ class TabRecord {
   int data;
  public:
   TabRecord(KeyType, int);
-  ~TabRecord(){};
+  ~TabRecord(){}
   int Getdata()const;
   KeyType Getkey()const;
 };
@@ -37,9 +37,9 @@ class HashTable {
   void del(KeyType k);
   int IsEmpty()const;
   int IsFull()const;
-  char* state(int);
-  int Getdata(int )const;
-  KeyType Getkey(int)const;
+  char* state(int i);
+  int Getdata(int i)const;
+  KeyType Getkey(int i)const;
 };
 
 int cfunk(char *, int);
@@ -125,4 +125,4 @@ KeyType HashTable<KeyType>::Getkey(int i)const {
   return (arr[i]->Getkey());
 }
 
-#endif //  SOLUTIONS_HASH_HASH_TAB_H_
+#endif  //  SOLUTIONS_HASH_HASH_TAB_H_

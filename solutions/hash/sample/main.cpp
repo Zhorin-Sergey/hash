@@ -33,7 +33,8 @@ void main(int argc, char *argv[]) {
       }
       for (int j = 0; j < size; j++) {
         if (ht.state(j) == "BUSY")
-          out << ht.state(j) << " " << ht.Getkey(j) << " " << ht.Getdata(j) << "\n";
+          out << ht.state(j) << " " << ht.Getkey(j)
+          << " " << ht.Getdata(j) << "\n";
         if (ht.state(j) == "FREE")
           out << ht.state(j) << "\n";
       }
@@ -56,7 +57,8 @@ void main(int argc, char *argv[]) {
       }
       for (int j = 0; j < size; j++) {
         if (ht.state(j) == "BUSY")
-          out << ht.state(j) << " " << ht.Getkey(j) << " " << ht.Getdata(j) << "\n";
+          out << ht.state(j) << " " << ht.Getkey(j)
+          << " " << ht.Getdata(j) << "\n";
         if (ht.state(j) == "FREE")
           out << ht.state(j) << "\n";
       }
@@ -73,7 +75,8 @@ void main(int argc, char *argv[]) {
   }
   for (int j = 0; j < 4; j++) {
     if (ht.state(j) == "BUSY")
-      std:: cout << ht.state(j) << " " << ht.Getkey(j) << " " << ht.Getdata(j) << "\n";
+      std:: cout << ht.state(j) << " " << ht.Getkey(j)
+      << " " << ht.Getdata(j) << "\n";
     if (ht.state(j) == "FREE")
       std::cout << ht.state(j) << "\n";
   }
